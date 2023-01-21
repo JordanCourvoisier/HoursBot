@@ -4,7 +4,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('./main.db');
 require('dotenv').config();
-client.login('OTY3OTgyNjE2MDY0MTk2NjQ5.YmYODw.AFt5TQ8er-vwiw-h9lJ84h61g3I');
+client.login(env.token);
 
 client.on("ready", async () => { 
     console.log("Ready"); 
